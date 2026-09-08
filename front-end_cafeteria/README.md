@@ -35,8 +35,8 @@ JavaScript
 CSS Modules
 Fetch API
 
-##Como executar
 
+##Como executar
 Pré-requisitos
 
 É necessário possuir instalado:
@@ -48,20 +48,19 @@ Verifique as versões:
 
 node -v
 npm -v
-Instalação
+
+##Instalação
 
 Entre na pasta do Front-end:
-
 cd front-end_cafeteria
 
 Instale as dependências:
-
 npm install
+
 Executar em desenvolvimento
 npm run dev
 
 Após iniciar, acesse:
-
 http://localhost:5173
 
 O Back-end precisa estar em execução em http://localhost:8080 para que o cadastro e a listagem funcionem corretamente.
