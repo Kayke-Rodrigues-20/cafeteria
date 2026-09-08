@@ -1,0 +1,210 @@
+.container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(135deg, #f5f1eb, #e8ded1);
+}
+
+
+.box {
+    width: 100%;
+    max-width: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 16px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    background-color: #fafafa;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.input::placeholder {
+    color: #999;
+}
+
+
+.input:focus {
+    background-color: #ffffff;
+
+    border-color: #8b5e3c;
+
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.12);
+}
+
+
+.button {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #8b5e3c;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: /*Define configurações e estilos para transações de design*/
+        background-color 0.2s ease, /*velocidade de animação para troca de cor*/
+        transform 0.2s ease,
+        box-shadow 0.2s ease; /*valocidade de animação para sombra na caixa*/
+}
+
+
+.button:hover {
+    background-color: #70492f; /*Essa será as configurações ao realizar as transações*/
+
+    box-shadow: 0 4px 12px rgba(112, 73, 47, 0.25); /*Essa será as configurações ao realizar as transações*/
+}
+
+
+.button:active {
+    transform: translateY(1px); /*move 1px para baixo ao clicar*/
+}
+
+.buttonCardapio{
+    margin-top: 10px;
+    width: 10%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b9adad;
+    color: #4e3333;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    transition: 
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.buttonCardapio:hover{
+    /*background-color: #645d5d;*/
+    box-shadow: 0 4px 12px rgb(131, 131, 131);
+}
+
+.buttonCardapio:active{
+    transform: 
+    translateY(1px);
+}
+
+.mensagem {
+    min-height: 20px;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .box {
+        padding: 25px 20px;
+    }
+}
+
+.select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    color: #444;
+    background-color: #fafafa;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.select:focus {
+    background-color: #ffffff;
+
+    border-color: #8b5e3c;
+
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.12);
+}
+
+.select:hover {
+    border-color: #b08a6b;
+}
+
+.select option {
+    color: #444;
+    background-color: #ffffff;
+}

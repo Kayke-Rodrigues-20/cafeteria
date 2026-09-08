@@ -1,0 +1,56 @@
+.gridContainerStyle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav a{
+    position: absolute;
+    right: 0;
+}
+
+.buttonCadastro{
+    margin-top: 10px;
+    width: 10%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b9adad;
+    color: #4e3333;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    transition: 
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.buttonCadastro:hover{
+    /*background-color: #645d5d;*/
+    box-shadow: 0 4px 12px rgb(131, 131, 131);
+}
+
+.buttonCadastro:active{
+    transform: 
+    translateY(1px);
+}
