@@ -1,16 +1,66 @@
-# React + Vite
+##Cafeteria — Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Front-end da aplicação Cafeteria, desenvolvido utilizando React e Vite.
 
-Currently, two official plugins are available:
+A aplicação é responsável pela interface com o usuário e realiza a comunicação com o Back-end através de uma API REST utilizando requisições HTTP.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##Funcionalidades
 
-## React Compiler
+Atualmente o Front-end possui duas telas principais:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##Cadastro
 
-## Expanding the Oxlint configuration
+Permite cadastrar um novo café informando:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Nome;
+Quantidade em mililitros;
+Tipo de torra;
+Preço;
+Descrição.
+Listagem
+
+A tela de listagem realiza uma requisição:
+
+GET http://localhost:8080/cafe
+
+Os cafés retornados pela API são apresentados em formato de cards.
+
+##Tecnologias
+React 19
+React DOM
+React Router DOM
+Vite
+JavaScript
+CSS Modules
+Fetch API
+
+##Como executar
+
+Pré-requisitos
+
+É necessário possuir instalado:
+
+Node.js
+npm
+
+Verifique as versões:
+
+node -v
+npm -v
+Instalação
+
+Entre na pasta do Front-end:
+
+cd front-end_cafeteria
+
+Instale as dependências:
+
+npm install
+Executar em desenvolvimento
+npm run dev
+
+Após iniciar, acesse:
+
+http://localhost:5173
+
+O Back-end precisa estar em execução em http://localhost:8080 para que o cadastro e a listagem funcionem corretamente.
