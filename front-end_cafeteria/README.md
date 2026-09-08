@@ -26,6 +26,7 @@ GET http://localhost:8080/cafe
 Os cafés retornados pela API são apresentados em formato de cards.
 
 ##Tecnologias
+
 React 19
 React DOM
 React Router DOM
